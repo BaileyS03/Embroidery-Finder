@@ -23,7 +23,7 @@ class BunnyCupSetSpider(scrapy.Spider):
         self.items = []
 
         #database
-        self.conn = sqlite3.connect('central_database.db')
+        self.conn = sqlite3.connect('../central_database.db')
         self.cursor = self.conn.cursor()
 
     def parse(self, response):

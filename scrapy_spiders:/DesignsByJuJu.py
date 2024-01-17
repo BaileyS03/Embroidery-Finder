@@ -9,7 +9,7 @@ class DesignsByJuJuSpider(scrapy.Spider):
     def __init__(self):
         super().__init__()
         # Connect to the SQLite database (replace 'your_database.db' with your database file)
-        self.conn = sqlite3.connect('central_database.db')
+        self.conn = sqlite3.connect('../central_database.db')
         self.cursor = self.conn.cursor()
 
     def parse(self, response):

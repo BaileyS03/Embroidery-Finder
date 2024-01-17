@@ -44,7 +44,7 @@ EmbroideryFinder is a personal project aimed at collecting and organizing embroi
     - For Bunnycup:
 
         ```bash
-        scrapy crawl class BunnyCupSetSpider
+        scrapy crawl BunnyCupSetSpider
         ```
 
    Adjust the spider names (`designsbyjuju` and `bunnycup`) based on your project structure.

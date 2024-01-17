@@ -2,7 +2,7 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 import sqlite3
 
-class DesignsSpider(scrapy.Spider):
+class DesignsByJuJuSpider(scrapy.Spider):
     name = 'designs'
     start_urls = ['https://www.designsbyjuju.com/all-designs']
 
@@ -53,5 +53,5 @@ if __name__ == "__main__":
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
     })
 
-    process.crawl(DesignsSpider)
+    process.crawl(DesignsByJuJu)
     process.start()
